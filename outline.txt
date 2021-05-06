@@ -1,0 +1,23 @@
+Categories
+
+Property :-
+- name 
+- location 
+- type [rent/sale]
+- price 
+- area
+- number of rooms & bathrooms
+- parking area
+
+Agents :-
+- name
+- title
+- image
+
+AboutUs :- 
+- image
+- vision
+- mission 
+
+Contact Us -
+Home - 
