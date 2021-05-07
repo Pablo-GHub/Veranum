@@ -3,14 +3,14 @@ from django.db import models
 # Create your models here.
 class Property(models.Model):
 
-    RENT = 'R'
-    SALE = 'S'
+    RENT = 'Rent'
+    SALE = 'Sale'
     TYPES_OF_PROPERTY_CHOICES = [(RENT, 'Rent'),(SALE, 'Sale')]
     name = models.CharField(max_length = 50)
     #location 
-    property_type = models.CharField(choices = TYPES_OF_PROPERTY_CHOICES, max_length = 1, default = SALE)
+    property_type = models.CharField(choices = TYPES_OF_PROPERTY_CHOICES, max_length = 10, default = SALE)
     price = models.PositiveIntegerField()
-    area = models.DecimalField(decimal_places = 2, max_digits = 6)
+    area = models.DecimalField(decimal_places = 0, max_digits = 5)
     category = models.ForeignKey('Category', null = True, on_delete = models.SET_NULL)
     number_of_rooms = models.PositiveIntegerField()
     number_of_bathrooms = models.PositiveIntegerField()
