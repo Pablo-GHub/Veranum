@@ -34,7 +34,7 @@
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-            <li {% if property_list %}class="active"{% endif %}><a href="/">Home</a></li>
+            <li {% if category_list %}class="active"{% endif %}><a href="/">Home</a></li>
             <li {% if property_list %}class="active"{% endif %}><a href="{% url 'property:property_list' %}">Properties</a></li>
             <li {% if agents_list %}class="active"{% endif %}><a href="{% url 'agents:agents_list' %}">Agents</a></li>
             <li {% if about %}class="active"{% endif %}><a href="{% url 'about_us:about_us' %}">About</a></li>
@@ -99,7 +99,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="probootstrap-card text-center probootstrap-animate">      
+          <div class="probootstrap-card text-center probootstrap-animate">   
+            <div class="probootstrap-card-media svg-sm colored">
+              <img src="{% static 'img/flaticon/svg/001-prize.svg' %}" class="svg">
+            </div>   
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading">Award Winning Brooker</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -108,6 +111,9 @@
         </div>
         <div class="col-md-4">
           <div class="probootstrap-card text-center probootstrap-animate">
+            <div class="probootstrap-card-media svg-sm colored">
+              <img src="{% static 'img/flaticon/svg/005-new.svg' %}" class="svg">
+            </div>
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading">New Houses</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -116,6 +122,9 @@
         </div>
         <div class="col-md-4">
           <div class="probootstrap-card text-center  probootstrap-animate">
+            <div class="probootstrap-card-media svg-sm colored">
+              <img src="{% static 'img/flaticon/svg/006-coin.svg' %}" class="svg">
+            </div>
             <div class="probootstrap-card-text">
               <h2 class="probootstrap-card-heading">Affordable Houses</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
