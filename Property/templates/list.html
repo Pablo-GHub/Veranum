@@ -1,7 +1,76 @@
-<h1>List</h1>
+{% extends 'home.html' %}
 
-{% for property in property_list %}
-    <h2>
-        <a href="{% url 'property:property_detail' property.id %}">{{property}}</a>
-    </h2>
-{% endfor %}
+{% block body %}
+
+  <section class="probootstrap-slider flexslider2 page-inner">
+    <div class="overlay"></div>
+    <div class="probootstrap-wrap-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+
+            <div class="page-title probootstrap-animate">
+              <div class="probootstrap-breadcrumbs">
+                <a href="#">Home</a><span>Properties</span>
+              </div>
+              <h1>Properties</h1>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="slides">
+      <li style="background-image: url(img/slider_1.jpg);"></li>
+      <li style="background-image: url(img/slider_4.jpg);"></li>
+      <li style="background-image: url(img/slider_2.jpg);"></li>
+    </ul>
+  </section>
+  <!-- END: slider  -->
+
+  <section class="probootstrap-section probootstrap-section-lighter">
+    <div class="container">
+      <div class="row">
+        {% for property in property_list %}
+          <div class="col-md-4 col-sm-6">
+            <div class="probootstrap-card probootstrap-listing">
+              <div class="probootstrap-card-media">
+                <img src="{{property.image.url}}" class="img-responsive" alt="{{property.name.url}}">
+              </div>
+              <div class="probootstrap-card-text">
+                <h2 class="probootstrap-card-heading"><a href="{% url 'property:property_detail' property.id %}">{{property}}</a></h2>
+                <div class="probootstrap-listing-location">
+                  <i class="icon-location2"></i> <span>360 W Wellington Chicago, IL 60657</span>
+                </div>
+                <div class="probootstrap-listing-category for-sale"><span>{{property.property_type}}</span></div>
+                <div class="probootstrap-listing-price"><strong>$ {{property.price}}K</strong></div>
+              </div>
+              <div class="probootstrap-card-extra">
+                <ul>
+                  <li>
+                    Area
+                    <span>{{property.area}}</span>
+                  </li>
+                  <li>
+                    Beds
+                    <span>{{property.number_of_rooms}}</span>
+                  </li>
+                  <li>
+                    Baths
+                    <span>{{property.number_of_bathrooms}}</span>
+                  </li>
+                  <li>
+                    Garages
+                    <span>{{property.number_of_parking}}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- END listing -->
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+{% endblock body %}
