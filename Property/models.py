@@ -27,6 +27,7 @@ class Property(models.Model):
 class Category(models.Model):
 
     name = models.CharField(max_length = 30)
+    image = models.ImageField(upload_to='Property/images/', null = True)
 
     def __str__(self):
         return self.name

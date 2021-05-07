@@ -34,11 +34,11 @@
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="agents.html">Agents</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li {% if property_list %}class="active"{% endif %}><a href="/">Home</a></li>
+            <li {% if property_list %}class="active"{% endif %}><a href="{% url 'property:property_list' %}">Properties</a></li>
+            <li {% if agents_list %}class="active"{% endif %}><a href="{% url 'agents:agents_list' %}">Agents</a></li>
+            <li {% if about %}class="active"{% endif %}><a href="{% url 'about_us:about_us' %}">About</a></li>
+            <li {% if contact_details %}class="active"{% endif %}><a href="{% url 'contact:send_mail' %}">Contact</a></li>
           </ul>
           <div class="extra-text visible-xs"> 
             <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Agents',
     'About',
     'Contact',
+    'Home',
 ]
 
 MIDDLEWARE = [
