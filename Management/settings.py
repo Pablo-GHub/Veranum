@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Property',
     'Agents',
     'About',
+    'Contact',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,10 @@ MEDIA_ROOT = BASE_DIR / ''
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD =  'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'test@gmail.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+EMAIL_PORT = 1025
