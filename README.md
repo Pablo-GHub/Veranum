@@ -36,9 +36,10 @@ HOW TO RUN:
   ```
   YOUR_ENVIROMENT_NAME/Scripts/activate
   ```
- 4. Install django and Pillow 
+ 4. Install requirements 
   ```
   pip install -r requirements.txt
+  pip install Pillow
   ```
  5. Run your project
   ```
