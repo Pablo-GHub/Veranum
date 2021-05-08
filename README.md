@@ -24,24 +24,24 @@ ____________________________________________________
 
 HOW TO RUN:
 
- 1. clone this repository in your local folder
- ```
- git clone "https://github.com/Aayush-Chheda/django-hotel".
- ```
- 2. install virtual environment 
- ```
- virtualenv YOUR_ENVIROMENT_NAME
- ```
- 3. activate the enviroment 
- ```
- YOUR_ENVIROMENT_NAME/Scripts/activate
- ```
- 4. install django and Pillow 
- ```
- 'pip install django' 
- 'pip install Pillow'
- ```
- 5. run 
- ```
- 'python manage.py runserver'
- ```
+ 1. Clone this repository in your local folder
+  ```
+  git clone "https://github.com/Aayush-Chheda/django-hotel".
+  ```
+ 2. Install virtual environment 
+  ```
+  virtualenv YOUR_ENVIROMENT_NAME
+  ```
+ 3. Activate the enviroment 
+  ```
+  YOUR_ENVIROMENT_NAME/Scripts/activate
+  ```
+ 4. Install django and Pillow 
+  ```
+  'pip install django' 
+  'pip install Pillow'
+  ```
+ 5. Run your project
+  ```
+  'python manage.py runserver'
+  ```
