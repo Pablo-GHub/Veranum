@@ -38,8 +38,7 @@ HOW TO RUN:
   ```
  4. Install django and Pillow 
   ```
-  'pip install django' 
-  'pip install Pillow'
+  pip install -r requirements.txt
   ```
  5. Run your project
   ```
