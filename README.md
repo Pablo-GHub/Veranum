@@ -42,5 +42,5 @@ HOW TO RUN:
   ```
  5. Run your project
   ```
-  'python manage.py runserver'
+  python manage.py runserver
   ```
