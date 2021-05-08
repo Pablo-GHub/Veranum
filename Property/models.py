@@ -7,7 +7,7 @@ class Property(models.Model):
     SALE = 'Sale'
     TYPES_OF_PROPERTY_CHOICES = [(RENT, 'Rent'),(SALE, 'Sale')]
     name = models.CharField(max_length = 50)
-    #location 
+    location = models.CharField(max_length = 80, null = True)
     property_type = models.CharField(choices = TYPES_OF_PROPERTY_CHOICES, max_length = 10, default = SALE)
     price = models.PositiveIntegerField()
     area = models.DecimalField(decimal_places = 0, max_digits = 5)

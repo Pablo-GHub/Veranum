@@ -1,11 +1,23 @@
 from django.shortcuts import render
 from .models import Property, Category, Reserve
 from .forms import ReserveForm
+from django.db.models import Q
+
 # Create your views here.
 def property_list(request):
 
     property_list = Property.objects.all()
     template = 'list.html'
+
+    address_query = request.GET.get('search')
+    property_type_query = request.GET.getlist('property_type', None)
+    if address_query and property_type_query:
+        property_list = property_list.filter(
+            Q(name__icontains = address_query) &
+            Q(property_type__icontains = property_type_query[0]) |
+            Q(location__icontains = address_query)
+        )
+    
     context = {
         'property_list' : property_list
     }

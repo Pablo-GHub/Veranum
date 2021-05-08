@@ -28,3 +28,7 @@ urlpatterns = [
 ]
 urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+admin.site.site_header = "HOTEL MANAGEMENT ADMIN"
+admin.site.site_title = 'HOTEL MANAGEMENT SYSTEM'
+admin.site.site_index_title = 'Welcome To Hotel Reservation Admin'
