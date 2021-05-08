@@ -25,7 +25,23 @@ ____________________________________________________
 HOW TO RUN:
 
  1. clone this repository in your local folder
- 2. install virtual environment with the command 'virtualenv YOUR_ENVIROMENT_NAME'
- 3. activate the enviroment by typing 'YOUR_ENVIROMENT_NAME/Scripts/activate'
- 4. install django and Pillow with 'pip install django' and 'pip install Pillow'
- 5. enter 'python manage.py runserver'
+ '''
+ git clone "https://github.com/Aayush-Chheda/django-hotel".
+ '''
+ 2. install virtual environment 
+ '''
+ virtualenv YOUR_ENVIROMENT_NAME
+ '''
+ 3. activate the enviroment 
+ '''
+ YOUR_ENVIROMENT_NAME/Scripts/activate
+ '''
+ 4. install django and Pillow 
+ '''
+ 'pip install django' 
+ 'pip install Pillow'
+ '''
+ 5. run 
+ '''
+ 'python manage.py runserver'
+ '''
