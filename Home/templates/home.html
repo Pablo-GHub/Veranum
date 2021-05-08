@@ -143,18 +143,15 @@
       </div>
       <div class="row probootstrap-gutter10">
         {% for category in category_list %}
-          {% for category_name, category_count in category_view %}
             <div class="col-md-6 col-sm-6">
-              <h1>{{category.name}}</h1>
               <a href="#" class="probootstrap-hover-overlay">
-                <img src="{{category.image.url}}" alt="{{category.name.url}}" class="img-responsive">
+                <img src="{{category.image}}" alt="{{category.name.url}}" class="img-responsive">
                 <div class="probootstrap-text-overlay">
                   <h3>{{category.name}}</h3>
-                  <p>{{category_count}}</p>
+                  <p>{{category.count}} Properties</p>
                 </div>
               </a>
             </div>
-            {% endfor %}
         {% endfor %}
       </div>
     </div>
