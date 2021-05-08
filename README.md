@@ -20,3 +20,12 @@ The admin channel can
  - add and change agents 
 
 The users can search and reserve places they want.
+____________________________________________________
+
+HOW TO RUN:
+
+ 1. clone this repository in your local folder
+ 2. install virtual environment with the command 'virtualenv YOUR_ENVIROMENT_NAME'
+ 3. activate the enviroment by typing 'YOUR_ENVIROMENT_NAME/Scripts/activate'
+ 4. install django and Pillow with 'pip install django' and 'pip install Pillow'
+ 5. enter 'python manage.py runserver'
