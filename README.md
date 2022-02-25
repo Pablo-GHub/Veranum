@@ -26,7 +26,7 @@ HOW TO RUN:
 
  1. Clone this repository in your local folder
   ```
-  git clone "https://github.com/Aayush-Chheda/django-hotel".
+  git clone "https://github.com/meetgandhii/django-hotel".
   ```
  2. Install virtual environment 
   ```
