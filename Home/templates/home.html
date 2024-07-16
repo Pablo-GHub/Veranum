@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hotel Management Website</title>
+    <title>Veranum</title>
     <meta name="description" content="Free Bootstrap Theme by uicookies.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
     
@@ -27,24 +27,24 @@
 
   <header role="banner" class="probootstrap-header">
     <div class="container">
-        <a href="/" class="probootstrap-logo">Haus<span>.</span></a>
+        <a href="/" class="probootstrap-logo">Veranum<span>.</span></a>
         
-        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menu</i></a>
+        <a href="#" class="probootstrap-burger-menu visible-xs" ><i>Menú</i></a>
         <div class="mobile-menu-overlay"></div>
 
         <nav role="navigation" class="probootstrap-nav hidden-xs">
           <ul class="probootstrap-main-nav">
-            <li {% if category_list %}class="active"{% endif %}><a href="/">Home</a></li>
-            <li {% if property_list %}class="active"{% endif %}><a href="{% url 'property:property_list' %}">Properties</a></li>
-            <li {% if agents_list %}class="active"{% endif %}><a href="{% url 'agents:agents_list' %}">Agents</a></li>
-            <li {% if about %}class="active"{% endif %}><a href="{% url 'about_us:about_us' %}">About</a></li>
-            <li {% if contact_details %}class="active"{% endif %}><a href="{% url 'contact:send_mail' %}">Contact</a></li>
+            <li {% if category_list %}class="active"{% endif %}><a href="/">Inicio</a></li>
+            <li {% if property_list %}class="active"{% endif %}><a href="{% url 'property:property_list' %}">Habitaciones</a></li>
+            <li {% if agents_list %}class="active"{% endif %}><a href="{% url 'agents:agents_list' %}">Nuestro Equipo</a></li>
+            <li {% if about %}class="active"{% endif %}><a href="{% url 'about_us:about_us' %}">Sobre Nosotros</a></li>
+            <li {% if contact_details %}class="active"{% endif %}><a href="{% url 'contact:send_mail' %}">Contactanos</a></li>
           </ul>
           <div class="extra-text visible-xs"> 
-            <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
-            <h5>Address</h5>
+            <a href="#" class="probootstrap-burger-menu"><i>Menú</i></a>
+            <h5>Dirección</h5>
             <p>198 West 21th Street, Suite 721 New York NY 10016</p>
-            <h5>Connect</h5>
+            <h5>Conectar</h5>
             <ul class="social-buttons">
               <li><a href="#"><i class="icon-twitter"></i></a></li>
               <li><a href="#"><i class="icon-facebook2"></i></a></li>
@@ -64,23 +64,22 @@
 
             <div class="probootstrap-home-search probootstrap-animate">
               <form action="{% url 'property:property_list' %}" method="get">
-                <h2 class="heading">Search your next dream home here</h2>
+                <h2 class="heading">Busca tu habitación ideal aqui.</h2>
                 <div class="probootstrap-field-group">
                   <div class="probootstrap-fields">
                     
                     <div class="search-field">
                       <i class="icon-location2"></i>
-                      <input type="text" name="search" class="form-control" placeholder="Enter address">
+                      <input type="text" name="search" class="form-control" placeholder="Ingresa tu Direccion">
                     </div>
                     <div class="search-category">
                       <i class="icon-chevron-down"></i>
                       <select name="property_type" id="" class="form-control">
-                        <option value="Rent">For Rent</option>
-                        <option value="Sale">For Sale</option>
+                        <option value="Rent">Reservar</option>
                       </select>
                     </div>
                   </div>
-                  <button class="btn btn-success" type="submit"><i class="icon-magnifying-glass t2"></i> Start Search</button>
+                  <button class="btn btn-success" type="submit"><i class="icon-magnifying-glass t2"></i> Empieza a buscar</button>
                 </div>
               </form>
             </div>
@@ -104,8 +103,8 @@
               <img src="{% static 'img/flaticon/svg/001-prize.svg' %}" class="svg">
             </div>   
             <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading">Award Winning Brooker</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="probootstrap-card-heading">Ganadores de Diversos Premios</h2>
+              <p>Hemos recibido reconocimiento por nuestra calidad en habitaciones!</p>
             </div>
           </div>
         </div>
@@ -115,8 +114,8 @@
               <img src="{% static 'img/flaticon/svg/005-new.svg' %}" class="svg">
             </div>
             <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading">New Houses</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="probootstrap-card-heading">Nuevos Hoteles</h2>
+              <p>Hoteles totalmente nuevos y remodelados!</p>
             </div>
           </div>
         </div>
@@ -126,8 +125,8 @@
               <img src="{% static 'img/flaticon/svg/006-coin.svg' %}" class="svg">
             </div>
             <div class="probootstrap-card-text">
-              <h2 class="probootstrap-card-heading">Affordable Houses</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="probootstrap-card-heading">Calidad / Precio</h2>
+              <p>Nos aseguramos de tener habitaciones accesesibles y de mejor calidad!</p>
             </div>
           </div>
         </div>
@@ -139,7 +138,7 @@
   <section class="probootstrap-section">
     <div class="container">
       <div class="row heading">
-        <h2 class="mt0 mb50 text-center">Explore Our Neighborhoods</h2>
+        <h2 class="mt0 mb50 text-center">Explora nuestros Hoteles</h2>
       </div>
       <div class="row probootstrap-gutter10">
         {% for category in category_list %}
@@ -148,7 +147,7 @@
                 <img src="{{category.image}}" alt="{{category.name.url}}" class="img-responsive">
                 <div class="probootstrap-text-overlay">
                   <h3>{{category.name}}</h3>
-                  <p>{{category.count}} Properties</p>
+                  <p>{{category.count}} Habitaciones</p>
                 </div>
               </a>
             </div>
@@ -161,52 +160,52 @@
   <section class="probootstrap-section">
     <div class="container">
       <div class="row heading">
-        <h2 class="mt0 mb50 text-center">Our Services</h2>
+        <h2 class="mt0 mb50 text-center">Nuestros Servicios</h2>
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <div class="service text-center">
             <div class="icon"><i class="icon-list2"></i></div>
-            <h2 class="heading">Property Listing</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h2 class="heading">Listado de Habitaciones</h2>
+            <p>Proporcionamos un listado de habitaciones para satisfacer tus necesidades de la mejor calidad posible</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <div class="service text-center">
             <div class="icon"><i class="icon-power-cord"></i></div>
-            <h2 class="heading">Property Management</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h2 class="heading">Ultima tecnología</h2>
+            <p>Brindamos las últimas teconologias tanto en el hotel como en las habitaciones para estar siempre actualizados!</p>
           </div>
         </div>
         <div class="clearfix visible-sm-block"></div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <div class="service text-center">
             <div class="icon"><i class="icon-price-tag2"></i></div>
-            <h2 class="heading">Renting Properties</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h2 class="heading">Auditoría y optimización de operaciones</h2>
+            <p>Evaluación de procesos operativos en hoteles para mejorar la eficiencia.</p>
           </div>
         </div>
         <div class="clearfix visible-lg-block visible-md-block"></div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <div class="service text-center">
             <div class="icon"><i class="icon-direction"></i></div>
-            <h2 class="heading">Selling Properties</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h2 class="heading">Planificación de viajes corporativos</h2>
+            <p>Organización de alojamiento para grupos empresariales.</p>
           </div>
         </div>
         <div class="clearfix visible-sm-block"></div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <div class="service text-center">
             <div class="icon"><i class="icon-home3"></i></div>
-            <h2 class="heading">Book A Property</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h2 class="heading">Reservas y gestión de alojamiento</h2>
+            <p>Asistencia en la selección del alojamiento adecuado según las necesidades del cliente.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 probootstrap-animate">
           <div class="service text-center">
             <div class="icon"><i class="icon-magnifying-glass"></i></div>
-            <h2 class="heading">Search Property</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h2 class="heading">Servicios de formación y capacitación</h2>
+            <p>Programas de entrenamiento para personal hotelero en atención al cliente, gestión y operaciones.</p>
           </div>
         </div>
         <div class="clearfix visible-lg-block visible-md-block"></div>
@@ -221,42 +220,37 @@
       <div class="row mb60">
         <div class="col-md-3">
           <div class="probootstrap-footer-widget">
-            <h4 class="heading">About Haus.</h4>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+            <h4 class="heading">Sobre Nosotros</h4>
+            <p>Somos una empresa hotelera dispuesta a ofrecer las mejores habitaciones para nuestros clientes!</p>
           </div> 
         </div>
         <div class="col-md-3">
           <div class="probootstrap-footer-widget probootstrap-link-wrap">
-            <h4 class="heading">Quick Links</h4>
+            <h4 class="heading">Enlaces Rápidos</h4>
             <ul class="stack-link">
-              <li><a href="#">Property Listing</a></li>
-              <li><a href="#">Rent Properties</a></li>
-              <li><a href="#">Sell Properties</a></li>
-              <li><a href="#">Agents</a></li>
-              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Lista de Hoteles</a></li>
+              <li><a href="#">Reserver Habitación</a></li>
+              <li><a href="#">Agentes</a></li>
+              <li><a href="#">Testimonios</a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-3">
           <div class="probootstrap-footer-widget">
-            <h4 class="heading">Popular Cities</h4>
+            <h4 class="heading">Terminos y Condiciones</h4>
             <ul class="stack-link">
-              <li><a href="#">New York <small>(320 properties)</small></a></li>
-              <li><a href="#">San Francisco <small>(294 properties)</small></a></li>
-              <li><a href="#">Brooklyn <small>(300 properties)</small></a></li>
-              <li><a href="#">Chicago <small>(268 properties)</small></a></li>
-              <li><a href="#">Los Angeles <small>(342 properties)</small></a></li>
+              <li><a href="#">TyC <small>(Clic para Leer)</small></a></li>
             </ul>
           </div> 
         </div>
         <div class="col-md-3">
           <div class="probootstrap-footer-widget probootstrap-link-wrap">
-            <h4 class="heading">Subscribe</h4>
-            <p>Far far away behind the word mountains far from.</p>
+            <h4 class="heading">Suscribete</h4>
+            <p>Para recibir ofertas al instante!</p>
             <form action="#">
               <div class="form-field">
-                <input type="text" class="form-control" placeholder="Enter your email">
-                <button class="btn btn-subscribe">Send</button>
+                <input type="text" class="form-control" placeholder="Ingresa tu Correo">
+                <button class="btn btn-subscribe">Enviar</button>
               </div>
             </form>
           </div>

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% load bootstrap4 %}
 
 {% block body %}
@@ -12,9 +13,9 @@
 
             <div class="page-title probootstrap-animate">
               <div class="probootstrap-breadcrumbs">
-                <a href="#">Home</a><span>Properties</span>
+                <a href="#">Inicio</a><span>Habitaciones</span>
               </div>
-              <h1>Properties</h1>
+              <h1>Habitaciones</h1>
             </div>
 
           </div>
@@ -22,9 +23,9 @@
       </div>
     </div>
     <ul class="slides">
-      <li style="background-image: url(img/slider_1.jpg);"></li>
-      <li style="background-image: url(img/slider_4.jpg);"></li>
-      <li style="background-image: url(img/slider_2.jpg);"></li>
+      <li style="background-image: url({% static 'img/slider_1.jpg' %});"></li>
+      <li style="background-image: url({% static 'img/slider_4.jpg' %});"></li>
+      <li style="background-image: url({% static 'img/slider_2.jpg' %});"></li>
     </ul>
   </section>
   <!-- END: slider  -->
@@ -44,25 +45,25 @@
                   <div class="probootstrap-listing-location">
                     <i class="icon-location2"></i> <span>{{property.location}}</span>
                   </div>
-                  <div class="probootstrap-listing-category for-sale"><span>FOR {{property.property_type}}</span></div>
-                  <div class="probootstrap-listing-price"><strong>$ {{property.price}}K</strong></div>
+                  <div class="probootstrap-listing-category for-sale"><span>Calidad: {{property.property_type}}</span></div>
+                  <div class="probootstrap-listing-price"><strong> {{property.price}}$CLP/Noche</strong></div>
                 </div>
                 <div class="probootstrap-card-extra">
                   <ul>
                     <li>
-                      Area
-                      <span>{{property.area}}</span>
+                      Espacio
+                      <span>{{property.area}} m²</span>
                     </li>
                     <li>
-                      Beds
+                      Camas
                       <span>{{property.number_of_rooms}}</span>
                     </li>
                     <li>
-                      Baths
+                      Baños
                       <span>{{property.number_of_bathrooms}}</span>
                     </li>
                     <li>
-                      Garages
+                      Wifi
                       <span>{{property.number_of_parking}}</span>
                     </li>
                   </ul>
@@ -73,7 +74,7 @@
           {% endfor %}
         {% else %}
         <div class="col-md-4 col-sm-6">
-          <h2>No Such Properties Found</h2>
+          <h2>No se encontraron Habitaciones</h2>
         </div>
         {% endif %}
       </div>

@@ -3,18 +3,19 @@ from django.db import models
 # Create your models here.
 class Property(models.Model):
 
-    RENT = 'Rent'
-    SALE = 'Sale'
-    TYPES_OF_PROPERTY_CHOICES = [(RENT, 'Rent'),(SALE, 'Sale')]
-    name = models.CharField(max_length = 50)
-    location = models.CharField(max_length = 80, null = True)
-    property_type = models.CharField(choices = TYPES_OF_PROPERTY_CHOICES, max_length = 10, default = SALE)
+    JR = 'Junior'
+    EJECUTIVO = 'Ejecutivo'
+    DELUXE = 'Deluxe'
+    TYPES_OF_PROPERTY_CHOICES = [(JR, 'Junior'),(EJECUTIVO, 'Ejecutivo'),(DELUXE, 'Deluxe')]
+    name = models.CharField('Número de Habitación', max_length = 50)
+    location = models.CharField('Locación', max_length = 80, null = True)
+    property_type = models.CharField('Tipo de Habitación', choices = TYPES_OF_PROPERTY_CHOICES, max_length = 10, default = JR)
     price = models.PositiveIntegerField()
     area = models.DecimalField(decimal_places = 0, max_digits = 5)
     category = models.ForeignKey('Category', null = True, on_delete = models.SET_NULL)
-    number_of_rooms = models.PositiveIntegerField()
-    number_of_bathrooms = models.PositiveIntegerField()
-    number_of_parking = models.PositiveIntegerField()
+    number_of_rooms = models.PositiveIntegerField('Numero de camas')
+    number_of_bathrooms = models.PositiveIntegerField('Numero de baños')
+    number_of_parking = models.TextField('Wifi')
     image = models.ImageField(upload_to='Property/images/')
 
     def __str__(self):
